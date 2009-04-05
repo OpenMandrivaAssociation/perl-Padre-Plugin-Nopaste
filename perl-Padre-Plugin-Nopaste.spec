@@ -1,6 +1,6 @@
 
 %define realname   Padre-Plugin-Nopaste
-%define version    0.2.0
+%define version    0.2.1
 %define release    %mkrel 1
 
 Name:       perl-%{realname}
@@ -22,6 +22,8 @@ BuildRequires: perl(Padre::Plugin)
 BuildRequires: perl(Padre::Task)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
+BuildRequires: perl(parent)
+Requires: perl(parent)
 
 BuildArch: noarch
 
