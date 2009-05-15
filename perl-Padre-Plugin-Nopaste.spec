@@ -1,7 +1,7 @@
 
 %define realname   Padre-Plugin-Nopaste
 %define version    0.2.1
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}
