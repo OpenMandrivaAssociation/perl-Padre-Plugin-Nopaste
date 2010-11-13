@@ -1,5 +1,5 @@
 %define upstream_name    Padre-Plugin-Nopaste
-%define upstream_version v0.3.0
+%define upstream_version v0.3.1
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
