@@ -2,14 +2,14 @@
 %define upstream_version v0.3.1
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.07
+Release:	1
 
 Summary:	Send code on a nopaste website from padre
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Padre/Padre-Plugin-Nopaste-0.07.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(App::Nopaste)
@@ -80,4 +80,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Apr 05 2009 cpan2dist 0.2.0-1mdv
 - initial mdv release, generated with cpan2dist
+
 
