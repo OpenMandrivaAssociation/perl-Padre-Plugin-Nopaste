@@ -1,15 +1,13 @@
 %define upstream_name    Padre-Plugin-Nopaste
-%define upstream_version 0.08
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	0.08
+Release:	4
 
 Summary:	Send code on a nopaste website from padre
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Padre/Padre-Plugin-Nopaste-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Padre/Padre-Plugin-Nopaste-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,7 +35,7 @@ It is using 'App::Nopaste' underneath, so check this module's pod for more
 information.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
